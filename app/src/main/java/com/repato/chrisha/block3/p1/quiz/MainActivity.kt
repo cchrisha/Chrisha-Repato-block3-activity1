@@ -17,6 +17,8 @@ class MainActivity : AppCompatActivity()
     {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        results = findViewById(R.id.results)
+        inputs = findViewById(R.id.inputs)
     }
 
     fun numberAction(view: View)

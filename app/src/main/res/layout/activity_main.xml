@@ -50,16 +50,14 @@
         <Button
             style="@style/buttonNum"
             android:onClick="allClearAction"
-            android:text="AC"/>
+            android:layout_weight="2"
+            android:text="C"/>
 
         <Button
             style="@style/buttonNum"
             android:onClick="backSpaceAction"
             android:text="⌫"/>
 
-        <Button
-            style="@style/buttonNum"
-            android:text=" "/>
 
         <Button
             style="@style/buttonOperator"
@@ -161,7 +159,7 @@
             android:layout_weight="2"
             android:background="@color/orange"
             android:textSize="40sp"
-            android:onClick="equals"
+            android:onClick="equalsAction"
             android:text="="/>
     </LinearLayout>
 
