@@ -14,14 +14,60 @@
         android:padding="20dp">
 
         <TextView
-            android:layout_width="wrap_content"
+            android:id="@+id/inputs"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Hello World!"
-            app:layout_constraintBottom_toBottomOf="parent"
+            android:text=""
+            android:lines="2"
+            android:maxLines="2"
+            android:textColor="@color/white"
+            android:textAlignment="textEnd"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toBottomOf="@id/results"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
+        <TextView
+            android:id="@+id/results"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:lines="1"
+            android:maxLines="1"
+            android:textColor="@color/white"
+            android:textAlignment="textEnd"
+            android:textSize="40sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        style="@style/buttonRow">
+
+        <Button
+            style="@style/buttonNum"
+            android:onClick="numberAction"
+            android:text="AC"/>
+
+        <Button
+            style="@style/buttonNum"
+            android:text="⌫"/>
+
+        <Button
+            style="@style/buttonNum"
+            android:text="%"/>
+
+        <Button
+            style="@style/buttonOperator"
+            android:onClick="operationAction"
+            android:text="/"/>
+
+    </LinearLayout>
+
+
+
 
 </LinearLayout>
