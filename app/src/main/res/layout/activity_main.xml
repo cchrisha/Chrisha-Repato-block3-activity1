@@ -49,16 +49,17 @@
 
         <Button
             style="@style/buttonNum"
-            android:onClick="numberAction"
+            android:onClick="allClearAction"
             android:text="AC"/>
 
         <Button
             style="@style/buttonNum"
+            android:onClick="backSpaceAction"
             android:text="⌫"/>
 
         <Button
             style="@style/buttonNum"
-            android:text="%"/>
+            android:text=" "/>
 
         <Button
             style="@style/buttonOperator"
@@ -77,10 +78,12 @@
 
         <Button
             style="@style/buttonNum"
+            android:onClick="numberAction"
             android:text="8"/>
 
         <Button
             style="@style/buttonNum"
+            android:onClick="numberAction"
             android:text="9"/>
 
         <Button
@@ -100,10 +103,12 @@
 
         <Button
             style="@style/buttonNum"
+            android:onClick="numberAction"
             android:text="5"/>
 
         <Button
             style="@style/buttonNum"
+            android:onClick="numberAction"
             android:text="6"/>
 
         <Button
@@ -123,10 +128,12 @@
 
         <Button
             style="@style/buttonNum"
+            android:onClick="numberAction"
             android:text="2"/>
 
         <Button
             style="@style/buttonNum"
+            android:onClick="numberAction"
             android:text="3"/>
 
         <Button
@@ -146,6 +153,7 @@
 
         <Button
             style="@style/buttonNum"
+            android:onClick="numberAction"
             android:text="."/>
 
         <Button
